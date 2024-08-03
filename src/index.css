@@ -8,10 +8,59 @@
 }
 .container {
   width: 100%;
+  height: auto;
   font-size: 10px;
   padding: 0em 2em;
   padding-bottom: 4em;
   font-family: "Chakra Petch", sans-serif;
+}
+
+.container nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 2px solid; */
+}
+.container nav ul {
+  display: flex;
+  align-items: center;
+  gap: 4em;
+}
+.container nav ul li {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  cursor: pointer;
+}
+.container nav ul li a {
+  font-size: 1.6em;
+  font-weight: 500;
+  color: var(--text);
+  transition: color 500ms ease-in-out;
+}
+.container nav ul li .arr {
+  font-size: 1.6em;
+  transition: color 500ms ease-in-out;
+}
+.container nav ul li:hover a {
+  color: var(--highlight);
+}
+.container nav ul li:hover .arr {
+  color: var(--highlight);
+}
+
+.container nav .logo {
+  font-size: 2.4em;
+  color: var(--text);
+  font-weight: 400;
+  transition: color 500ms ease-in-out;
+}
+
+.container nav ul li .icon {
+  font-size: 1.6em;
+  font-weight: 500;
+  color: var(--text);
 }
 
 form {
@@ -57,7 +106,7 @@ nav .link.active {
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
 }
 
-.row {
+.home .row {
   width: 100%;
   min-height: 75vh;
   display: flex;
@@ -68,7 +117,7 @@ nav .link.active {
   padding: 1em;
 }
 
-.box {
+.home .row .box {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -82,7 +131,7 @@ nav .link.active {
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
   border-radius: 0.5em;
 }
-.box img {
+.home .row .box img {
   display: block;
   object-fit: cover;
   width: 100%;
@@ -90,7 +139,7 @@ nav .link.active {
   border-top-right-radius: inherit;
   border-top-left-radius: inherit;
 }
-.box h2 {
+.home .row .box h2 {
   font-size: 2em;
   text-transform: uppercase;
   margin: 0.5em auto;

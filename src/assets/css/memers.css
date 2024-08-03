@@ -1,0 +1,112 @@
+.memers {
+  width: 100%;
+  min-height: 100vh;
+}
+.memers h1 {
+  color: blue;
+  font-size: 6em;
+  text-align: center;
+  margin: 1em auto;
+}
+
+.memers .rows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4em;
+}
+.memers .rows .box {
+  display: flex;
+  width: 400px;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0em 1em;
+  cursor: pointer;
+  color: var(--text);
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+}
+.memers .rows .box.highlight {
+  background: var(--bg);
+}
+.memers .rows .box::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+  background: rgba(0, 0, 0, 0.1);
+  transform: translateY(-100%);
+  z-index: 2;
+  border-radius: inherit;
+}
+.memers .rows .box:hover::before {
+  transform: translateY(0%);
+}
+
+.memers .rows .box .dpcont {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+
+.memers .rows .box .dpcont img {
+  display: block;
+  object-fit: cover;
+  width: 80px;
+  height: 80px;
+  border-radius:10px;
+  color: var(--text);
+}
+.memers .rows .box .dpcont h3 {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  gap: 0.5em;
+}
+.memers .rows .box .dpcont h4 {
+  font-size: 1.4em;
+  font-weight: 400;
+  margin-top: 0.5em;
+}
+
+.memers .rows .box  h2 {
+  font-size: 2em;
+  cursor: pointer;
+  color: blue;
+}
+
+.memers .rows .box .view {
+  display: flex;
+  gap: 2em;
+  margin-top: 1em;
+  position: absolute;
+  right: 1%;
+  opacity: 0;
+  transform: translateY(-10%);
+  transition: 500ms ease-in-out;
+  z-index: 3;
+}
+.memers .rows .box .view .btn {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.4em;
+  font-weight: 500;
+  padding: 0.7em 1.5em;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #000;
+  background:#fff;
+}
+
+.memers .rows .box:hover .cont {
+  opacity: 0;
+}
+.memers .rows .box:hover .view {
+  opacity: 1;
+  transform: translateY(0%);
+}

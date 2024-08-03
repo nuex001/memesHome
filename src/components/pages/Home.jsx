@@ -6,6 +6,11 @@ import meme3bg from "../../assets/images/meme3.jpg";
 import meme4bg from "../../assets/images/meme4.jpg";
 import meme5bg from "../../assets/images/meme5.jpg";
 import meme6bg from "../../assets/images/meme6.jpg";
+import meme7bg from "../../assets/images/meme7.jpg";
+import meme8bg from "../../assets/images/meme8.jpg";
+import meme9bg from "../../assets/images/meme9.jpg";
+import meme10bg from "../../assets/images/meme10.jpg";
+import meme11bg from "../../assets/images/meme11.jpg";
 import { BsDownload } from "react-icons/bs";
 import { FaTimes } from "react-icons/fa";
 
@@ -46,6 +51,31 @@ function Home() {
     {
       name: "based",
       meme: meme6bg,
+      description: "BM BM",
+    },
+    {
+      name: "based",
+      meme: meme7bg,
+      description: "BM BM",
+    },
+    {
+      name: "based",
+      meme: meme8bg,
+      description: "BM BM",
+    },
+    {
+      name: "based",
+      meme: meme9bg,
+      description: "BM BM",
+    },
+    {
+      name: "based",
+      meme: meme10bg,
+      description: "BM BM",
+    },
+    {
+      name: "based",
+      meme: meme11bg,
       description: "BM BM",
     },
   ]);
